@@ -12,8 +12,13 @@ public class AulaArraysComFor {
             System.out.println("Informe a nota " + (i + 1));
             notas[i] = scan.nextDouble();
         }
+        double soma = 0;
+        double media = 0;
         for (int i = 0; i < notas.length; i++){
+            soma = soma + notas[i];
+            media = soma/notas.length;
             System.out.println("Nota " + (i+1) + ": " + (notas[i]));
+            System.out.println(media);
         }
     }
 }
